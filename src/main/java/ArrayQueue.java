@@ -3,25 +3,25 @@
  */
 public class ArrayQueue implements Queue {
 
-	static final int defaultsize = 100;
+	static final int defaultSize = 100;
 
 	private Object data[]; // the array that will store the queue
 	private int head;
 	private int tail;
 	private int size; // the maximum # of elements it can hold
 
-	ArrayQueue(int maxsize) {
-		data = new Object[maxsize];
+	ArrayQueue(int maxSize) {
+		data = new Object[maxSize];
 		head = 0;
 		tail = 0;
-		size = maxsize;
+		size = maxSize;
 	}
 
 	public ArrayQueue() {
-		data = new Object[defaultsize];
+		data = new Object[defaultSize];
 		head = 0;
 		tail = 0;
-		size = defaultsize;
+		size = defaultSize;
 	}
 
 	/** Add an element to the end of the queue, if it's not full */
